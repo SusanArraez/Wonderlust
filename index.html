@@ -274,23 +274,23 @@
             <h2>Contact Us <span id="required">(*required)</span></h2>
             <form action="https://wp.zybooks.com/form-viewer.php" method="post">
                 <div>
-                    <label for="firstName">First Name<span class="required">*</span></label>
+                    <label for="firstName">First Name<span id="required">*</span></label>
                     <input name="firstName" id="firstName" type="text" required autocomplete="on">
                 </div>
                 <div>
-                    <label for="lastName">Last Name<span class="required">*</span></label>
+                    <label for="lastName">Last Name<span id="required">*</span></label>
                     <input name="lastName" id="lastName" type="text" required autocomplete="on">
                 </div>
                 <div>
-                    <label for="email">Email<span class="required">*</span></label>
+                    <label for="email">Email<span id="required">*</span></label>
                     <input name="email" id="email" type="email" required autocomplete="on">
                 </div>
                 <div>
-                    <label for="phone">Phone<span class="required">*</span></label>
+                    <label for="phone">Phone<span id="required">*</span></label>
                     <input name="phone" id="phone" type="tel" required autocomplete="on">
                 </div>
                 <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span class="required">*</span></legend>
+                <legend>Preferred Contact Method<span id="required">*</span></legend>
                     <div> 
                         <input type="radio" id="email" name="preferred-contact" value="Email" required>
                         <label for="email">Email</label>
@@ -305,7 +305,7 @@
                     </div>
                 </fieldset>
                 <fieldset id="destination">
-                    <legend>Destination<span class="required">*</span></legend>
+                    <legend>Destination<span id="required">*</span></legend>
                     <select id="select-destination" required>
                         <option value="" disabled selected>Choose</option>
                         <option value="Barcelona">Barcelona</option>
@@ -320,7 +320,7 @@
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span class="required">*</span></legend>
+                    <legend>Travel Time<span id="required">*</span></legend>
                     <select id="select-travel-time">
                         <option value="" disabled selected>Choose</option>
                         <option value="Fall">Fall</option>
@@ -330,7 +330,7 @@
                         <option value="Flexible">Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <input type="submit" id="submit">
             </form> 
             
         </section>
